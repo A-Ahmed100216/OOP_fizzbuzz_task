@@ -8,11 +8,11 @@ class FizzBuzz():
 
 
     def fizz(self):
-        for i in range(self.number):
-            if self.number[i] %3==0:
+        for i in range(self.start,self.end):
+            if i %3==0:
                 return "Fizz"
             else:
-                return self.number[i]
+                return i
 
 #     def buzz(self):
 #         if self.number%5==0:
