@@ -1,15 +1,33 @@
 # Create a class called Fizz
-class Fizz():
+class FizzBuzz():
+
+    def __init__(self):
+        self.number= 10
+        self.start=0
+        self.end=10
+
 
     def fizz(self):
-        for num in range(1,101):
-            if num%3==0:
+        for i in range(self.number):
+            if self.number[i] %3==0:
                 return "Fizz"
+            else:
+                return self.number[i]
+
+#     def buzz(self):
+#         if self.number%5==0:
+#             return "Buzz"
+#         else:
+#             return self.number
+#
+#     def fizzbuzz(self):
+#         if self.number%3==0 and self.number%5==0:
+#             return "FizzBuzz"
 
 
-
-
-
+fizzy=FizzBuzz()
+print(fizzy.fizz())
+# print(fizzy.buzz())
 # * Write a program that prints the numbers from 1 to 100.
 # * For multiples of three print "Fizz" instead of the number
 # * For the multiples of five print "Buzz" instead of the number
