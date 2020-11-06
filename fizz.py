@@ -3,7 +3,7 @@ class FizzBuzz:
 
     def __init__(self):
         # Create a number attribute
-        self.number=[i for i in range(1,101)]
+        self.number=[i for i in range(1,102)]
 
     # Create a function
     def fizzbuzz(self):
@@ -22,6 +22,4 @@ class FizzBuzz:
             else:
                 print(n)
 
-# Create an instance to test.
-test= FizzBuzz()
-print(test.fizzbuzz())
+
