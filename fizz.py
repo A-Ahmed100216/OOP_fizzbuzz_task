@@ -2,13 +2,14 @@
 class FizzBuzz:
 
     def __init__(self):
-        # Create a number attribute
-        self.number=[i for i in range(1,102)]
+        # Create start and end number attributes
+        self.start = 1
+        self.end = 101
 
     # Create a function
     def fizzbuzz(self):
         # For each value in the number attribute range...
-        for n in range(len(self.number)):
+        for n in range(self.start, self.end):
             # If the number is divisible by 5 and 3, prints FizzBuzz
             if n%3==0 and n%5==0:
                 print("FizzBuzz")

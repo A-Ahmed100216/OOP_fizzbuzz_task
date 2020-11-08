@@ -32,11 +32,11 @@ This is a simple game that will substitute multiples of 3 and 5 for fizz and buz
 class FizzBuzz:
 ```
 
-* Initialise the class with an attribute to display numbers. 
+* Initialise the class with an attributes to store the start and end numbers.
 ```python
     def __init__(self):
-        # Create a number attribute
-        self.number=[i for i in range(1,102)]
+        self.start = 1
+        self.end = 101
 ```
 
 * Create the fizzbuzz function and use control flow to define the criterion.
@@ -46,7 +46,7 @@ class FizzBuzz:
   * Else, print the number. 
 ```python
     def fizzbuzz(self):
-        for n in range(len(self.number)):
+        for n in range(self.start, self.end):
             if n%3==0 and n%5==0:
                 print("FizzBuzz")
             elif n%3==0:
