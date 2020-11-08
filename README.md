@@ -68,4 +68,29 @@ test= FizzBuzz()
 test.fizzbuzz()
 ```
 
+#### Extra
+* We can add increased functionality, allowing the user to substitute their own numbers using the following inputs:
+```python
+self.fizz=int(input("Please enter the number you wish the substitute with Fizz: "))
+self.buzz=int(input("Please enter the number you wish the substitute with Buzz: "))
+```
+* Upon adding these attributes, the control flow must be changed to reflect this. 
+* It is important to convert the fizz and buzz attributes into integers.
+```python
+    def fizzbuzz(self):
+        # For each value in the number attribute range...
+        for n in range(self.start, self.end):
+            # If the number is divisible by int Fizz and int Buzz, prints FizzBuzz
+            if n%self.fizz==0 and n%self.buzz==0:
+                print("FizzBuzz")
+            # If the number is divisible by int Fizz, prints Fizz
+            elif n%self.fizz==0:
+                print("Fizz")
+            # If the number is divisible by int Buzz, prints Buzz
+            elif n%self.buzz==0:
+                print("Buzz")
+            # Otherwise, it just prints the number
+            else:
+                print(n)
+```
 
